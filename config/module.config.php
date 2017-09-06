@@ -9,14 +9,6 @@ namespace MSBios\Resource\Doctrine;
 return [
 
     'doctrine' => [
-        'configuration' => [
-            'orm_default' => [
-                'types' => [
-                    'enum' => 'string',
-                    'bit' => 'boolean'
-                ],
-            ],
-        ],
         'connection' => [
             'orm_default' => [
                 'driverClass' => \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
