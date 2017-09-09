@@ -44,6 +44,10 @@ class Module implements ModuleInterface
             ->get(EntityManager::class)
             ->getConnection()
             ->getDatabasePlatform();
+
+
+        var_dump($platform); die();
+
         $platform->registerDoctrineTypeMapping('enum', 'string');
         $platform->registerDoctrineTypeMapping('bit', 'boolean');
     }
