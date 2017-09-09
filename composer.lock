@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5b72eff45f43ed2df00a9b089e15f64",
+    "content-hash": "9043bcfd4d633e9b666798b20a517682",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1047,16 +1047,16 @@
         },
         {
             "name": "msbios/msbios",
-            "version": "v0.0.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-msbios.git",
-                "reference": "90e31adf2480acf0e8e529ad803429d920faba11"
+                "reference": "b4091efba59fec44a429fe83c7ea0b3e50a793ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/90e31adf2480acf0e8e529ad803429d920faba11",
-                "reference": "90e31adf2480acf0e8e529ad803429d920faba11",
+                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/b4091efba59fec44a429fe83c7ea0b3e50a793ac",
+                "reference": "b4091efba59fec44a429fe83c7ea0b3e50a793ac",
                 "shasum": ""
             },
             "require": {
@@ -1078,25 +1078,25 @@
                     "email": "info@msbios.com"
                 }
             ],
-            "time": "2017-07-10T07:23:56+00:00"
+            "time": "2017-09-09T18:26:16+00:00"
         },
         {
             "name": "msbios/resource",
-            "version": "v0.0.8",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-resource.git",
-                "reference": "b01c71e06137e8dc35136f073ac5ecd40fad0311"
+                "reference": "838012630f832dbf90fefe51477dc91e2edbb8cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-resource/zipball/b01c71e06137e8dc35136f073ac5ecd40fad0311",
-                "reference": "b01c71e06137e8dc35136f073ac5ecd40fad0311",
+                "url": "https://api.github.com/repos/msbios/msbios-resource/zipball/838012630f832dbf90fefe51477dc91e2edbb8cd",
+                "reference": "838012630f832dbf90fefe51477dc91e2edbb8cd",
                 "shasum": ""
             },
             "require": {
-                "msbios/msbios": "^0.0.1",
-                "msbios/stdlib": "^0.0.5",
+                "msbios/msbios": "~1.0",
+                "msbios/stdlib": "~1.0",
                 "zendframework/zend-form": "^2.10",
                 "zendframework/zend-loader": "^2.5",
                 "zendframework/zend-modulemanager": "^2.8",
@@ -1128,11 +1128,11 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-09T16:49:58+00:00"
+            "time": "2017-09-09T18:41:14+00:00"
         },
         {
             "name": "msbios/stdlib",
-            "version": "v0.0.5",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-stdlib.git",
