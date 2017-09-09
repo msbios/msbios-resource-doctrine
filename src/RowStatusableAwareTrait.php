@@ -5,7 +5,7 @@
  */
 namespace MSBios\Resource\Doctrine;
 
-use Doctrine\ORM\Mapping AS ORM;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Trait RowStatusableAwareTrait
@@ -16,7 +16,7 @@ trait RowStatusableAwareTrait
     /**
      * @var bool
      *
-     * @ORM\Column(name="rowstatust", type="boolean")
+     * @ORM\Column(name="rowstatus", type="boolean")
      */
     private $rowStatus = true;
 

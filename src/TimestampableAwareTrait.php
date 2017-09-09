@@ -5,7 +5,7 @@
  */
 namespace MSBios\Resource\Doctrine;
 
-use Doctrine\ORM\Mapping AS ORM;
+use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
@@ -35,7 +35,7 @@ trait TimestampableAwareTrait
      */
     public function getCreatedAt()
     {
-        if (!$this->createdAt instanceof \DateTimeInterface) {
+        if (! $this->createdAt instanceof \DateTimeInterface) {
             $this->createdAt = new \DateTime('now');
         }
         return $this->createdAt;
@@ -56,7 +56,7 @@ trait TimestampableAwareTrait
      */
     public function getModifiedAt()
     {
-        if (!$this->modifiedAt instanceof \DateTimeInterface) {
+        if (! $this->modifiedAt instanceof \DateTimeInterface) {
             $this->modifiedAt = new \DateTime('now');
         }
         return $this->modifiedAt;

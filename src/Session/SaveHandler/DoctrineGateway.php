@@ -93,7 +93,7 @@ class DoctrineGateway implements SaveHandlerInterface
     public function write($id, $data)
     {
         /** Session */
-        if (!$entity = $this->em->find(Session::class, $id)) {
+        if (! $entity = $this->em->find(Session::class, $id)) {
             /** @var Session $entity */
             $entity = new Session;
         }
