@@ -12,6 +12,7 @@ return [
         'DoctrineModule',
         'DoctrineORMModule',
         'MSBios\Resource',
+        'MSBios\Resource\Doctrine',
     ],
 
     // These are various options for the listeners attached to the ModuleManager

@@ -15,11 +15,8 @@ use MSBios\Resource\Doctrine\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_modules")
  */
-class Module implements
-    IdentifierAwareInterface,
-    TitleAwareInterface
+class Module extends Entity implements TitleAwareInterface
 {
-    use IdentifierAwareTrait;
     use TitleAwareTrait;
 
     /**

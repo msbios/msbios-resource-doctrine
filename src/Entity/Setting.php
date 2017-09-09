@@ -6,9 +6,7 @@
 namespace MSBios\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MSBios\Resource\Doctrine\Entity\IdentifierAwareTrait;
-use MSBios\Resource\Doctrine\Entity\TitleAwareTrait;
-use MSBios\Resource\Entity;
+use MSBios\Resource\Doctrine\Entity;
 
 /**
  * Class Setting
@@ -17,12 +15,8 @@ use MSBios\Resource\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_settings")
  */
-class Setting implements
-    IdentifierAwareInterface,
-    TitleAwareInterface
+class Setting extends Entity implements TitleAwareInterface
 {
-
-    use IdentifierAwareTrait;
     use TitleAwareTrait;
 
     /**

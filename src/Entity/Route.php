@@ -6,6 +6,7 @@
 namespace MSBios\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use MSBios\Resource\Doctrine\Entity;
 
 /**
  * Class Route
@@ -14,8 +15,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_routes")
  */
-class Route implements
-    IdentifierAwareInterface
+class Route extends Entity
 {
-  use IdentifierAwareTrait;
+
 }

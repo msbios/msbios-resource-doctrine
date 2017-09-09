@@ -16,11 +16,8 @@ use MSBios\Resource\Doctrine\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_page_types")
  */
-class PageType implements
-    IdentifierAwareInterface,
-    TitleAwareInterface
+class PageType extends Entity implements TitleAwareInterface
 {
-    use IdentifierAwareTrait;
     use TitleAwareTrait;
 
     /**

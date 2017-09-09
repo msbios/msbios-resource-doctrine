@@ -6,6 +6,7 @@
 namespace MSBios\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use MSBios\Resource\Doctrine\Entity;
 
 /**
  * Class Session
@@ -14,10 +15,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_sessions")
  */
-class Session implements IdentifierAwareInterface
+class Session extends Entity
 {
-    use IdentifierAwareTrait;
-
     /**
      * @ORM\Column(type="string")
      */
@@ -26,7 +25,7 @@ class Session implements IdentifierAwareInterface
     /**
      * @ORM\Column(type="object")
      */
-    private $data;
+    private $value;
 
     /**
      * @ORM\Column(type="integer")
@@ -59,18 +58,18 @@ class Session implements IdentifierAwareInterface
     /**
      * @return mixed
      */
-    public function getData()
+    public function getValue()
     {
         return $this->data;
     }
 
     /**
-     * @param $data
+     * @param $value
      * @return $this
      */
-    public function setData($data)
+    public function setValue($value)
     {
-        $this->data = $data;
+        $this->value = $value;
         return $this;
     }
 

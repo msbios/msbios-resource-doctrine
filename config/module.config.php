@@ -13,8 +13,11 @@ return [
             'orm_default' => [
                 'driverClass' => \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
                 'params' => [
-                    // Some Connection Params
-                ]
+                    'host' => '',
+                    'user' => '',
+                    'password' => '',
+                    'dbname' => '',
+                ],
             ],
         ],
         'driver' => [
@@ -26,13 +29,6 @@ return [
                     __DIR__ . '/../src/Entity'
                 ],
             ],
-            // Module::class => [
-            //     'class' => \Doctrine\ORM\Mapping\Driver\YamlDriver::class,
-            //     'cache' => 'array',
-            //     'paths' => [
-            //         __DIR__ . '/../src/Yml'
-            //     ],
-            // ],
 
             // default metadata driver, aggregates all other drivers into a single one.
             // Override `orm_default` only if you know what you're doing
@@ -45,6 +41,7 @@ return [
     ],
     'hydrators' => [
         'factories' => [
+
         ],
         'aliases' => [
             \MSBios\Resource\Form\LayoutForm::class =>
@@ -53,15 +50,15 @@ return [
                 \DoctrineModule\Stdlib\Hydrator\DoctrineObject::class
         ]
     ],
-//
+
     Module::class => [
         'listeners' => [
-//            [
-//                'listener' => Listener\SessionListener::class,
-//                'method' => 'onDispatch',
-//                'event' => \Zend\Mvc\MvcEvent::EVENT_DISPATCH,
-//                'priority' => -100500,
-//            ],
+            // [
+            //     'listener' => Listener\SessionListener::class,
+            //     'method' => 'onDispatch',
+            //     'event' => \Zend\Mvc\MvcEvent::EVENT_DISPATCH,
+            //     'priority' => -100500,
+            // ],
         ],
         'session' => [
 

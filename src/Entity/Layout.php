@@ -15,11 +15,8 @@ use MSBios\Resource\Doctrine\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_layouts")
  */
-class Layout implements
-//     IdentifierAwareInterface,
-    TitleAwareInterface
+class Layout extends Entity implements TitleAwareInterface
 {
-    use IdentifierAwareTrait;
     use TitleAwareTrait;
 
     /**
