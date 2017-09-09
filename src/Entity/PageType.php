@@ -12,8 +12,8 @@ use MSBios\Resource\Doctrine\RowStatusableAwareInterface;
 use MSBios\Resource\Doctrine\RowStatusableAwareTrait;
 use MSBios\Resource\Doctrine\TimestampableAwareInterface;
 use MSBios\Resource\Doctrine\TimestampableAwareTrait;
-use MSBios\Resource\Doctrine\TitleAwareInterface;
-use MSBios\Resource\Doctrine\TitleAwareTrait;
+use MSBios\Resource\Doctrine\TitlebleAwareInterface;
+use MSBios\Resource\Doctrine\TitlebleAwareTrait;
 
 /**
  * Class PageType
@@ -23,11 +23,11 @@ use MSBios\Resource\Doctrine\TitleAwareTrait;
  * @ORM\Table(name="sys_t_page_types")
  */
 class PageType extends Entity implements
-    TitleAwareInterface,
+    TitlebleAwareInterface,
     TimestampableAwareInterface,
     RowStatusableAwareInterface
 {
-    use TitleAwareTrait;
+    use TitlebleAwareTrait;
     use TimestampableAwareTrait;
     use RowStatusableAwareTrait;
 

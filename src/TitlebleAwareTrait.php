@@ -6,10 +6,10 @@
 namespace MSBios\Resource\Doctrine;
 
 /**
- * Trait TitleAwareTrait
+ * Trait TitlebleAwareTrait
  * @package MSBios\Resource\Doctrine
  */
-trait TitleAwareTrait
+trait TitlebleAwareTrait
 {
     /**
      * @var string

@@ -5,26 +5,18 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Factory/DoctrineGatewayFactory.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Factory/ModuleFactory.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Listener/SessionListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RowStatusableAwareInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RowStatusableAwareTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TimestampableAwareInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TimestampableAwareTrait.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Entity/TitleAwareInterface.php" afterPath="$PROJECT_DIR$/src/TitleAwareInterface.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Entity/TitleAwareTrait.php" afterPath="$PROJECT_DIR$/src/TitleAwareTrait.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/IdentifierAwareInterface.php" afterPath="$PROJECT_DIR$/src/IdentifierableAwareInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TitleAwareInterface.php" afterPath="$PROJECT_DIR$/src/TitlebleAwareInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TitleAwareTrait.php" afterPath="$PROJECT_DIR$/src/TitlebleAwareTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/module.config.php" afterPath="$PROJECT_DIR$/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity.php" afterPath="$PROJECT_DIR$/src/Entity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Layout.php" afterPath="$PROJECT_DIR$/src/Entity/Layout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Module.php" afterPath="$PROJECT_DIR$/src/Entity/Module.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/PageType.php" afterPath="$PROJECT_DIR$/src/Entity/PageType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Route.php" afterPath="$PROJECT_DIR$/src/Entity/Route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Setting.php" afterPath="$PROJECT_DIR$/src/Entity/Setting.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Theme.php" afterPath="$PROJECT_DIR$/src/Entity/Theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IdentifierAwareTrait.php" afterPath="$PROJECT_DIR$/src/IdentifierAwareTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Module.php" afterPath="$PROJECT_DIR$/src/Module.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Session/SaveHandler/DoctrineGateway.php" afterPath="$PROJECT_DIR$/src/Session/SaveHandler/DoctrineGateway.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,11 +77,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RowStatusableAwareTrait.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RowStatusableAwareTrait.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RowStatusableAwareTrait.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
               <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TitlebleAwareInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TitlebleAwareInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TitlebleAwareTrait.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TitlebleAwareTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -109,30 +121,6 @@
                 <marker date="1500756288000" expanded="true" signature="51924:52048" ph="ALTER TABLE ${$table}... " />
                 <marker date="1500756288000" expanded="true" signature="54146:54177" ph="ALTER TABLE ${$table}... " />
                 <marker date="1500756288000" expanded="true" signature="99753:99829" ph="INSERT INTO ${$tableName}... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Layout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-              <folding>
-                <element signature="e#132#164#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Module.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Module.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-              <folding>
-                <element signature="e#132#164#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,8 +186,6 @@
         <option value="$PROJECT_DIR$/src/RowStatusableAwareInterface.php" />
         <option value="$PROJECT_DIR$/src/TimestampableAwareInterface.php" />
         <option value="$PROJECT_DIR$/src/TimestampableAwareTrait.php" />
-        <option value="$PROJECT_DIR$/src/TitleAwareInterface.php" />
-        <option value="$PROJECT_DIR$/src/TitleAwareTrait.php" />
         <option value="$PROJECT_DIR$/src/Entity/Layout.php" />
         <option value="$PROJECT_DIR$/src/Entity/Module.php" />
         <option value="$PROJECT_DIR$/src/Entity/PageType.php" />
@@ -208,6 +194,10 @@
         <option value="$PROJECT_DIR$/src/Entity/Theme.php" />
         <option value="$PROJECT_DIR$/src/Module.php" />
         <option value="$PROJECT_DIR$/src/RowStatusableAwareTrait.php" />
+        <option value="$PROJECT_DIR$/src/TitleAwareInterface.php" />
+        <option value="$PROJECT_DIR$/src/TitlebleAwareInterface.php" />
+        <option value="$PROJECT_DIR$/src/TitleAwareTrait.php" />
+        <option value="$PROJECT_DIR$/src/TitlebleAwareTrait.php" />
       </list>
     </option>
   </component>
@@ -260,52 +250,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="msbios-resource-doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="msbios-resource-doctrine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="msbios-resource-doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="msbios-resource-doctrine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="msbios-resource-doctrine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="msbios-resource-doctrine" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -833,22 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TitleAwareInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TitleAwareTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Layout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -951,6 +879,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TitlebleAwareInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TitlebleAwareTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>
