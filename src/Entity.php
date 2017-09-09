@@ -14,7 +14,7 @@ use MSBios\Resource\Record;
  * @package MSBios\Resource\Doctrine
  * @ORM\MappedSuperclass
  */
-abstract class Entity extends Record implements EntityInterface, IdentifierAwareInterface
+abstract class Entity extends Record implements EntityInterface, IdentifierableAwareInterface
 {
     use IdentifierAwareTrait;
 }

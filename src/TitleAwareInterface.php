@@ -3,7 +3,7 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Resource\Doctrine\Entity;
+namespace MSBios\Resource\Doctrine;
 
 /**
  * Interface TitleAwareInterface

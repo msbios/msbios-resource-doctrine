@@ -3,11 +3,11 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Resource\Doctrine\Entity;
+namespace MSBios\Resource\Doctrine;
 
 /**
  * Trait TitleAwareTrait
- * @package MSBios\Resource\Doctrine\Entity
+ * @package MSBios\Resource\Doctrine
  */
 trait TitleAwareTrait
 {

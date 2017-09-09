@@ -7,6 +7,10 @@ namespace MSBios\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use MSBios\Resource\Doctrine\Entity;
+use MSBios\Resource\Doctrine\RowStatusableAwareInterface;
+use MSBios\Resource\Doctrine\RowStatusableAwareTrait;
+use MSBios\Resource\Doctrine\TitleAwareInterface;
+use MSBios\Resource\Doctrine\TitleAwareTrait;
 
 /**
  * Class Theme
@@ -15,9 +19,12 @@ use MSBios\Resource\Doctrine\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_themes")
  */
-class Theme extends Entity implements TitleAwareInterface
+class Theme extends Entity implements
+    TitleAwareInterface,
+    RowStatusableAwareInterface
 {
     use TitleAwareTrait;
+    use RowStatusableAwareTrait;
 
     /**
      * @var string

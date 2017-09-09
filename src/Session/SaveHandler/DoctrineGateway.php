@@ -3,12 +3,13 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Resource\Session\SaveHandler;
 
+namespace MSBios\Resource\Doctrine\Session\SaveHandler;
+
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Criteria;
 use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
-use MSBios\Resource\Entity\Session;
+use MSBios\Resource\Doctrine\Entity\Session;
 use Zend\Session\SaveHandler\SaveHandlerInterface;
 
 /**
@@ -71,9 +72,10 @@ class DoctrineGateway implements SaveHandlerInterface
      */
     public function read($id)
     {
+        /** @var Session $entity */
         if ($entity = $this->em->find(Session::class, $id)) {
             if ($entity->getModified() + $entity->getLifetime() > time()) {
-                return $entity->getData();
+                return $entity->getValue();
             }
             $this->destroy($id);
         }
@@ -90,18 +92,15 @@ class DoctrineGateway implements SaveHandlerInterface
      */
     public function write($id, $data)
     {
-        /** @var EntityRepository $repository */
-        $repository = $this->em->getRepository(Session::class);
-
-        if (! $entity = $repository->findOneBy(['id' => $id])) {
-
+        /** Session */
+        if (!$entity = $this->em->find(Session::class, $id)) {
             /** @var Session $entity */
             $entity = new Session;
         }
 
         $entity->setId($id)
             ->setName($this->name)
-            ->setData((string)$data)
+            ->setValue((string)$data)
             ->setModified(time())
             ->setLifetime($this->lifetime);
 
@@ -134,8 +133,8 @@ class DoctrineGateway implements SaveHandlerInterface
      */
     public function gc($maxlifetime)
     {
-        /** @var array $collection */
-        $collection = $this->em
+        /** @var ArrayCollection $results */
+        $results = $this->em
             ->getRepository(Session::class)
             ->findAll();
 
@@ -143,7 +142,7 @@ class DoctrineGateway implements SaveHandlerInterface
         $criteria = new Criteria;
         $criteria->andWhere($criteria->expr()->lt('modified', time() + $this->lifetime));
 
-        $this->em->remove($collection->matching($criteria));
+        $this->em->remove($results->matching($criteria));
         $this->em->flush();
 
         return true;

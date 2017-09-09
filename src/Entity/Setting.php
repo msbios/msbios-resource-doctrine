@@ -7,6 +7,10 @@ namespace MSBios\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use MSBios\Resource\Doctrine\Entity;
+use MSBios\Resource\Doctrine\RowStatusableAwareInterface;
+use MSBios\Resource\Doctrine\RowStatusableAwareTrait;
+use MSBios\Resource\Doctrine\TitleAwareInterface;
+use MSBios\Resource\Doctrine\TitleAwareTrait;
 
 /**
  * Class Setting
@@ -15,9 +19,12 @@ use MSBios\Resource\Doctrine\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_settings")
  */
-class Setting extends Entity implements TitleAwareInterface
+class Setting extends Entity implements
+    TitleAwareInterface,
+    RowStatusableAwareInterface
 {
     use TitleAwareTrait;
+    use RowStatusableAwareTrait;
 
     /**
      * @var string
@@ -25,48 +32,56 @@ class Setting extends Entity implements TitleAwareInterface
      * @ORM\Column(name="identifier", type="string", length=100, nullable=false)
      */
     private $identifier;
+
     /**
      * @var string
      *
      * @ORM\Column(name="base_url", type="string", length=255, nullable=false)
      */
     private $baseUrl;
+
     /**
      * @var string
      *
      * @ORM\Column(name="ssl_base_url", type="string", length=255, nullable=false)
      */
     private $sslBaseUrl;
+
     /**
      * @var string
      *
      * @ORM\Column(name="cdn_url", type="string", length=255, nullable=false)
      */
     private $cdnUrl;
+
     /**
      * @var string
      *
      * @ORM\Column(name="ssl_cdn_url", type="string", length=255, nullable=false)
      */
     private $sslCdnUrl;
+
     /**
      * @var boolean
      *
      * @ORM\Column(name="forcessl", type="smallint", nullable=false)
      */
     private $forcessl = false;
+
     /**
      * @var string
      *
      * @ORM\Column(name="locale", type="string", length=20, nullable=false)
      */
     private $locale = 'en_US';
+
     /**
      * @var string
      *
      * @ORM\Column(name="timezone", type="string", length=50, nullable=false)
      */
     private $timezone = "America/New_York";
+
     /**
      * @var string
      *

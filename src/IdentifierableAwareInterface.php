@@ -6,10 +6,10 @@
 namespace MSBios\Resource\Doctrine;
 
 /**
- * Interface IdentifierAwareInterface
+ * Interface IdentifierableAwareInterface
  * @package MSBios\Resource\Doctrine
  */
-interface IdentifierAwareInterface
+interface IdentifierableAwareInterface
 {
     /**
      * @return int

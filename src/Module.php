@@ -5,9 +5,12 @@
  */
 namespace MSBios\Resource\Doctrine;
 
+use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\ORM\EntityManager;
 use MSBios\ModuleInterface;
 use Zend\EventManager\EventInterface;
+use Zend\EventManager\LazyListenerAggregate;
+use Zend\ModuleManager\Feature\BootstrapListenerInterface;
 use Zend\Mvc\ApplicationInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
@@ -15,7 +18,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  * Class Module
  * @package MSBios\Resource\Doctrine
  */
-class Module implements ModuleInterface
+class Module implements ModuleInterface, BootstrapListenerInterface
 {
     /**
      * Returns configuration to merge with application configuration
@@ -37,18 +40,21 @@ class Module implements ModuleInterface
     {
         /** @var ApplicationInterface $target */
         $target = $e->getTarget();
+
         /** @var ServiceLocatorInterface $serviceManager */
         $serviceManager = $target->getServiceManager();
-        /** @var  $platform */
+
+        /** @var MySqlPlatform $platform */
         $platform = $serviceManager
             ->get(EntityManager::class)
             ->getConnection()
             ->getDatabasePlatform();
-
-
-        var_dump($platform); die();
-
         $platform->registerDoctrineTypeMapping('enum', 'string');
-        $platform->registerDoctrineTypeMapping('bit', 'boolean');
+        // $platform->registerDoctrineTypeMapping('bit', 'boolean');
+
+        (new LazyListenerAggregate(
+            $serviceManager->get(self::class)->get('listeners')->toArray(),
+            $serviceManager
+        ))->attach($target->getEventManager());
     }
 }

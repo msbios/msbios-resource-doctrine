@@ -7,6 +7,12 @@ namespace MSBios\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use MSBios\Resource\Doctrine\Entity;
+use MSBios\Resource\Doctrine\RowStatusableAwareInterface;
+use MSBios\Resource\Doctrine\RowStatusableAwareTrait;
+use MSBios\Resource\Doctrine\TimestampableAwareInterface;
+use MSBios\Resource\Doctrine\TimestampableAwareTrait;
+use MSBios\Resource\Doctrine\TitleAwareInterface;
+use MSBios\Resource\Doctrine\TitleAwareTrait;
 
 /**
  * Class Layout
@@ -15,9 +21,14 @@ use MSBios\Resource\Doctrine\Entity;
  * @ORM\Entity
  * @ORM\Table(name="sys_t_layouts")
  */
-class Layout extends Entity implements TitleAwareInterface
+class Layout extends Entity implements
+    TitleAwareInterface,
+    TimestampableAwareInterface,
+    RowStatusableAwareInterface
 {
     use TitleAwareTrait;
+    use TimestampableAwareTrait;
+    use RowStatusableAwareTrait;
 
     /**
      * @var string

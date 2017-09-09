@@ -6,6 +6,8 @@
 
 namespace MSBios\Resource\Doctrine;
 
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 return [
 
     'doctrine' => [
@@ -51,14 +53,25 @@ return [
         ]
     ],
 
+    'service_manager' => [
+        'factories' => [
+            Listener\SessionListener::class =>
+                InvokableFactory::class,
+            Session\SaveHandler\DoctrineGateway::class =>
+                Factory\DoctrineGatewayFactory::class,
+            Module::class =>
+                Factory\ModuleFactory::class
+        ],
+    ],
+
     Module::class => [
         'listeners' => [
-            // [
-            //     'listener' => Listener\SessionListener::class,
-            //     'method' => 'onDispatch',
-            //     'event' => \Zend\Mvc\MvcEvent::EVENT_DISPATCH,
-            //     'priority' => -100500,
-            // ],
+            [
+                'listener' => Listener\SessionListener::class,
+                'method' => 'onDispatch',
+                'event' => \Zend\Mvc\MvcEvent::EVENT_DISPATCH,
+                'priority' => -100500,
+            ],
         ],
         'session' => [
 
