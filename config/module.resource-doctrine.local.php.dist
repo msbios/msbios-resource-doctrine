@@ -1,0 +1,39 @@
+<?php
+/**
+ * @access protected
+ * @author Judzhin Miles <info[woof-woof]msbios.com>
+ */
+
+namespace MSBios\Resource\Doctrine;
+
+return [
+
+    Module::class => [
+
+        'session' => [
+
+            /**
+             * Please note that before you enable the zDbSession make sure to import the schema first
+             * into your database or it will cause your application to die with a fatal error.
+             * For more information about this please consult the readme file.
+             */
+            'enabled' => true,
+
+            /**
+             * Below is the standard configuration as per Zend Session Config, consult
+             * the ZF2 documentation (haha) or just post on stack overflow on the settings details.
+             */
+            'options' => [
+                'cache_expire' => 86400,
+                'cookie_domain' => '',
+                'name' => '',
+                'cookie_lifetime' => 1800,
+                'gc_maxlifetime' => 1800,
+                'cookie_path' => '/',
+                'cookie_secure' => true,
+                'remember_me_seconds' => 3600,
+                'use_cookies' => true,
+            ]
+        ]
+    ]
+];
