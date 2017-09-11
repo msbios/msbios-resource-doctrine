@@ -5,8 +5,8 @@
  */
 namespace MSBios\Resource\Doctrine\Listener;
 
+use MSBios\Resource\Doctrine\Module;
 use MSBios\Resource\Doctrine\Session\SaveHandler\DoctrineGateway;
-use MSBios\Resource\Module;
 use Zend\Config\Config;
 use Zend\EventManager\EventInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
