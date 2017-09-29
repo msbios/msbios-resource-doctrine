@@ -39,6 +39,13 @@ return [
         ]
     ],
 
+    'form_elements' => [
+        'aliases' => [
+            \MSBios\Resource\Form\PageTypeForm::class =>
+                Form\PageTypeForm::class
+        ]
+    ],
+
     'service_manager' => [
         'factories' => [
             Listener\SessionListener::class =>
