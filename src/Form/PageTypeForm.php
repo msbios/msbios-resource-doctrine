@@ -34,5 +34,4 @@ class PageTypeForm extends DefaultPageTypeForm implements ObjectManagerAwareInte
             ],
         ]);
     }
-
 }
