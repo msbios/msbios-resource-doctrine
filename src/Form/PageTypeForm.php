@@ -6,7 +6,6 @@
 
 namespace MSBios\Resource\Doctrine\Form;
 
-
 use DoctrineModule\Form\Element\ObjectSelect;
 use DoctrineModule\Persistence\ObjectManagerAwareInterface;
 use MSBios\Form\Doctrine\ObjectManagerAwareTrait;
