@@ -20,6 +20,8 @@ class PageTypeForm extends DefaultPageTypeForm implements ObjectManagerAwareInte
 {
     use ObjectManagerAwareTrait;
 
+    const LABEL_GENERATOR_FORMAT = '%s[%s]';
+
     public function init()
     {
         parent::init();
@@ -30,7 +32,13 @@ class PageTypeForm extends DefaultPageTypeForm implements ObjectManagerAwareInte
             'options' => [
                 'object_manager' => $this->getObjectManager(),
                 'target_class' => Module::class,
-                'property' => 'title',
+                'label_generator' => function (Module $targetEntity) {
+                    return sprintf(
+                        self::LABEL_GENERATOR_FORMAT,
+                        $targetEntity->getTitle(),
+                        $targetEntity->getModule()
+                    );
+                },
             ],
         ]);
     }
