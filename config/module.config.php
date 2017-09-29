@@ -40,6 +40,10 @@ return [
     ],
 
     'form_elements' => [
+        'factories' => [
+            Form\PageTypeForm::class =>
+                InvokableFactory::class
+        ],
         'aliases' => [
             \MSBios\Resource\Form\PageTypeForm::class =>
                 Form\PageTypeForm::class

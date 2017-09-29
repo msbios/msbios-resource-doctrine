@@ -22,6 +22,8 @@ class PageTypeForm extends DefaultPageTypeForm implements ObjectManagerAwareInte
 
     public function init()
     {
+        parent::init();
+
         $this->add([
             'type' => ObjectSelect::class,
             'name' => 'module',
@@ -31,8 +33,6 @@ class PageTypeForm extends DefaultPageTypeForm implements ObjectManagerAwareInte
                 'property' => 'title',
             ],
         ]);
-
-        parent::init();
     }
 
 }
