@@ -20,7 +20,7 @@ class PageTypeForm extends DefaultPageTypeForm implements ObjectManagerAwareInte
 {
     use ObjectManagerAwareTrait;
 
-    const LABEL_GENERATOR_FORMAT = '%s[%s]';
+    const LABEL_GENERATOR_FORMAT = '%s [%s]';
 
     public function init()
     {
