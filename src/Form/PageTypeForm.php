@@ -8,7 +8,7 @@ namespace MSBios\Resource\Doctrine\Form;
 
 use DoctrineModule\Form\Element\ObjectSelect;
 use DoctrineModule\Persistence\ObjectManagerAwareInterface;
-use MSBios\Form\Doctrine\ObjectManagerAwareTrait;
+use MSBios\Doctrine\ObjectManagerAwareTrait;
 use MSBios\Resource\Doctrine\Entity\Module;
 use MSBios\Resource\Form\PageTypeForm as DefaultPageTypeForm;
 

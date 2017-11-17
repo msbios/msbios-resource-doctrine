@@ -26,6 +26,9 @@ class Module implements
     BootstrapListenerInterface,
     AutoloaderProviderInterface
 {
+    /** @const VERSION */
+    const VERSION = '1.0.10';
+
     /**
      * Returns configuration to merge with application configuration
      *
@@ -56,7 +59,6 @@ class Module implements
             ->getConnection()
             ->getDatabasePlatform();
         $platform->registerDoctrineTypeMapping('enum', 'string');
-        // $platform->registerDoctrineTypeMapping('bit', 'boolean');
 
         (new LazyListenerAggregate(
             $serviceManager->get(self::class)->get('listeners')->toArray(),
