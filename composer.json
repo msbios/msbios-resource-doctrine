@@ -47,5 +47,10 @@
     "convert-mapping": "./vendor/bin/doctrine-module orm:convert-mapping --namespace=\"MSBios\\Resource\\\" --force --from-database yml src/Yml/",
     "generate-entities": "./vendor/bin/doctrine-module orm:generate-entities src/ --generate-annotations=true",
     "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
+  },
+  "extra": {
+    "zf": {
+      "component": "MSBios\\Resource\\Doctrine"
+    }
   }
 }
