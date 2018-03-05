@@ -52,8 +52,23 @@ trait PaginatorRepositoryTrait
      */
     public function getPaginator($page = 1, $limit = 20)
     {
+        return $this->getPaginatorWith(function (QueryBuilder $qb) {
+            return $qb;
+        }, $page, $limit);
+    }
+
+    /**
+     * @param callable $closure
+     * @param int $page
+     * @param int $limit
+     */
+    public function getPaginatorWith(callable $closure, $page = 1, $limit = 20)
+    {
+        /** @var QueryBuilder $qb */
+        $qb = $closure($this->createQueryBuilder('ms'));
+
         /** @var Paginator $paginator */
-        $paginator = $this->buildPaginator($this->createQueryBuilder('ms'));
+        $paginator = $this->buildPaginator($qb);
         $paginator->setDefaultItemCountPerPage($limit);
         $paginator->setCurrentPageNumber($page);
         return $paginator;
