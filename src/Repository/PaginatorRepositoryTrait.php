@@ -48,12 +48,14 @@ trait PaginatorRepositoryTrait
     /**
      * @param int $page
      * @param int $limit
-     * @return mixed
+     * @return Paginator
      */
     public function getPaginator($page = 1, $limit = 20)
     {
-        return $this->buildPaginator($this->createQueryBuilder('ms'))
-            ->setDefaultItemCountPerPage($limit)
-            ->setCurrentPageNumber($page);
+        /** @var Paginator $paginator */
+        $paginator = $this->buildPaginator($this->createQueryBuilder('ms'));
+        $paginator->setDefaultItemCountPerPage($limit);
+        $paginator->setCurrentPageNumber($page);
+        return $paginator;
     }
 }
