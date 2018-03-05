@@ -52,7 +52,7 @@ trait PaginatorRepositoryTrait
      */
     public function getPaginator($page = 1, $limit = 20)
     {
-        return $this->buildPaginator($this->createQueryBuilder())
+        return $this->buildPaginator($this->createQueryBuilder('ms'))
             ->setDefaultItemCountPerPage($limit)
             ->setCurrentPageNumber($page);
     }
