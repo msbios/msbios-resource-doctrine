@@ -65,7 +65,10 @@ trait PaginatorRepositoryTrait
     public function getPaginatorWith(callable $closure, $page = 1, $limit = 20)
     {
         /** @var QueryBuilder $qb */
-        $qb = $closure($this->createQueryBuilder('ms'));
+        $qb = $this->createQueryBuilder('ms');
+
+        /** Execute colosure */
+        $closure($qb);
 
         /** @var Paginator $paginator */
         $paginator = $this->buildPaginator($qb);
