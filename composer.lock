@@ -1057,22 +1057,22 @@
         },
         {
             "name": "msbios/doctrine",
-            "version": "v1.0.8",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-doctrine.git",
-                "reference": "a20b9a719c7321f064d06499788e1c180ab281d5"
+                "reference": "717ac05ebb18fcd3b611077b31f7bcb4a775e544"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-doctrine/zipball/a20b9a719c7321f064d06499788e1c180ab281d5",
-                "reference": "a20b9a719c7321f064d06499788e1c180ab281d5",
+                "url": "https://api.github.com/repos/msbios/msbios-doctrine/zipball/717ac05ebb18fcd3b611077b31f7bcb4a775e544",
+                "reference": "717ac05ebb18fcd3b611077b31f7bcb4a775e544",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-orm-module": "^1.1",
+                "msbios/form": "^1.0",
                 "msbios/json": "^1.0",
-                "msbios/msbios": "^1.0",
                 "msbios/stdlib": "^1.0"
             },
             "require-dev": {
@@ -1106,7 +1106,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-01T13:04:14+00:00"
+            "time": "2018-03-12T12:13:46+00:00"
         },
         {
             "name": "msbios/form",
@@ -1259,16 +1259,16 @@
         },
         {
             "name": "msbios/msbios",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-msbios.git",
-                "reference": "1611733d94fd9e05a852207296ea5595b66f2ab3"
+                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/1611733d94fd9e05a852207296ea5595b66f2ab3",
-                "reference": "1611733d94fd9e05a852207296ea5595b66f2ab3",
+                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/3db910564d610ee2a0a737cbc94089bc933ef759",
+                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759",
                 "shasum": ""
             },
             "require": {
@@ -1302,7 +1302,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-02-27T08:36:56+00:00"
+            "time": "2018-03-07T10:56:01+00:00"
         },
         {
             "name": "msbios/stdlib",
@@ -1450,7 +1450,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -1519,7 +1519,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -4546,7 +4546,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",

@@ -72,7 +72,7 @@ trait PaginatorRepositoryTrait
 
         /** @var Paginator $paginator */
         $paginator = $this->buildPaginator($qb);
-        $paginator->setDefaultItemCountPerPage($limit);
+        $paginator->setItemCountPerPage($limit);
         $paginator->setCurrentPageNumber($page);
         return $paginator;
     }
