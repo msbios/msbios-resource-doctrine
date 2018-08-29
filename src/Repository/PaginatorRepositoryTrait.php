@@ -16,6 +16,7 @@ use Zend\Paginator\Paginator;
 /**
  * Trait PaginatorRepositoryTrait
  * @package MSBios\Resource\Doctrine\Repository
+ * @deprecated
  */
 trait PaginatorRepositoryTrait
 {

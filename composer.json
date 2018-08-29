@@ -27,7 +27,8 @@
     "gedmo/doctrine-extensions": "^2.4",
     "dkorsak/doctrine-data-fixture-module": "^1.0",
     "zendframework/zend-session": "^2.8",
-    "msbios/form-doctrine": "^1.0"
+    "msbios/form-doctrine": "^1.0",
+    "msbios/paginator-doctrine": "^1.0"
   },
   "require-dev": {
     "zendframework/zend-router": "^3.0",

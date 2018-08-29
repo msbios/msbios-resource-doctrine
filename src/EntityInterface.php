@@ -12,4 +12,14 @@ namespace MSBios\Resource\Doctrine;
  */
 interface EntityInterface
 {
+    /**
+     * @return mixed
+     */
+    public function getId();
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function setId($id);
 }
