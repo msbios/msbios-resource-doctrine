@@ -49,10 +49,17 @@ class EntityRepository extends DefaultEntityRepository
     public function fetchAll($where = null, $sort = null, $order = null, $group = null, $having = null)
     {
         /** @var QueryBuilder $qb */
-        $qb = $this->createQueryBuilder(self::DEFAULT_ALIAS);
+        $qb = $this->createQueryBuilder(static::DEFAULT_ALIAS);
 
-        /** @var AdapterInterface $adapter */
-        $adapter = new QueryBuilderPaginator($qb, $where, $sort, $order, $group, $having);
+        if ($where instanceof \Closure) {
+            $where($qb, $sort, $order, $group, $having);
+
+            /** @var QueryBuilderPaginator|AdapterInterface $adapter */
+            $adapter = new QueryBuilderPaginator($qb);
+        } else {
+            /** @var QueryBuilderPaginator|AdapterInterface $adapter */
+            $adapter = new QueryBuilderPaginator($qb, $where, $sort, $order, $group, $having);
+        }
 
         return new Paginator($adapter);
     }
