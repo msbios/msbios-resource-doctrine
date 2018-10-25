@@ -40,25 +40,27 @@ class EntityRepository extends DefaultEntityRepository
 
     /**
      * @param null $where
-     * @param null $sort
-     * @param null $order
+     * @param null $orderBy
      * @param null $group
      * @param null $having
      * @return Paginator
      */
-    public function fetchAll($where = null, $sort = null, $order = null, $group = null, $having = null)
+    public function fetchAll($where = null, $orderBy = null, $group = null, $having = null)
     {
         /** @var QueryBuilder $qb */
         $qb = $this->createQueryBuilder(static::DEFAULT_ALIAS);
 
         if ($where instanceof \Closure) {
-            $where($qb, $sort, $order, $group, $having);
-
             /** @var QueryBuilderPaginator|AdapterInterface $adapter */
-            $adapter = new QueryBuilderPaginator($qb);
+            $adapter = $where($qb, $orderBy, $group, $having);
+
+            if (!($adapter instanceof AdapterInterface)) {
+                throw new \Exception('Must be AdapterInterface');
+            }
+
         } else {
             /** @var QueryBuilderPaginator|AdapterInterface $adapter */
-            $adapter = new QueryBuilderPaginator($qb, $where, $sort, $order, $group, $having);
+            $adapter = new QueryBuilderPaginator($qb, $where, $orderBy, $group, $having);
         }
 
         return new Paginator($adapter);
