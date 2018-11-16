@@ -29,10 +29,12 @@ trait RowStatusableAwareTrait
     }
 
     /**
-     * @param bool $rowStatus
+     * @param $rowStatus
+     * @return $this
      */
     public function setRowStatus($rowStatus)
     {
         $this->rowStatus = $rowStatus;
+        return $this;
     }
 }
