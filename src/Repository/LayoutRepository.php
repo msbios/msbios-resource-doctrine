@@ -14,5 +14,6 @@ use MSBios\Resource\Doctrine\EntityRepository;
  */
 class LayoutRepository extends EntityRepository
 {
-    // ...
+    /** @const DEFAULT_ALIAS */
+    const DEFAULT_ALIAS = 'l';
 }

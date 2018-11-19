@@ -14,5 +14,6 @@ use MSBios\Resource\Doctrine\EntityRepository;
  */
 class PageTypeRepository extends EntityRepository
 {
-    // ...
+    /** @const DEFAULT_ALIAS */
+    const DEFAULT_ALIAS = 'pt';
 }

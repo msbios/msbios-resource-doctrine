@@ -14,5 +14,6 @@ use MSBios\Resource\Doctrine\EntityRepository;
  */
 class RouteRepository extends EntityRepository
 {
-    // ...
+    /** @const DEFAULT_ALIAS */
+    const DEFAULT_ALIAS = 'r';
 }
