@@ -19,7 +19,7 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * Class PageType
  * @package MSBios\Resource\Doctrine\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\PageTypeRepository")
  * @ORM\Table(name="sys_t_page_types")
  */
 class PageType extends Entity implements

@@ -16,7 +16,7 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * Class Setting
  * @package MSBios\Resource\Doctrine\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\SettingRepository")
  * @ORM\Table(name="sys_t_settings")
  */
 class Setting extends Entity implements

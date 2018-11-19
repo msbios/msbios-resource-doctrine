@@ -18,7 +18,7 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * Class Module
  * @package MSBios\Resource\Doctrine\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\ModuleRepository")
  * @ORM\Table(name="sys_t_modules")
  */
 class Module extends Entity implements

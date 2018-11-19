@@ -16,7 +16,7 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * Class Theme
  * @package MSBios\Resource\Doctrine\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\ThemeRepository")
  * @ORM\Table(name="sys_t_themes")
  */
 class Theme extends Entity implements

@@ -12,7 +12,7 @@ use MSBios\Resource\Doctrine\Entity;
  * Class Session
  * @package MSBios\Resource\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\SessionRepository")
  * @ORM\Table(name="sys_t_sessions")
  */
 class Session extends Entity

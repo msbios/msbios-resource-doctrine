@@ -18,7 +18,7 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * Class Route
  * @package MSBios\Resource\Doctrine\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\RouteRepository")
  * @ORM\Table(name="sys_t_routes")
  */
 class Route extends Entity implements

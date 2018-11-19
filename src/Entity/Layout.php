@@ -18,7 +18,7 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * Class Layout
  * @package MSBios\Resource\Doctrine\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MSBios\Resource\Doctrine\Repository\LayoutRepository")
  * @ORM\Table(name="sys_t_layouts")
  */
 class Layout extends Entity implements
