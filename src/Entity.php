@@ -7,14 +7,13 @@
 namespace MSBios\Resource\Doctrine;
 
 use Doctrine\ORM\Mapping as ORM;
-use MSBios\Resource\Record;
 
 /**
  * Class Entity
  * @package MSBios\Resource\Doctrine
  * @ORM\MappedSuperclass
  */
-abstract class Entity extends Record implements EntityInterface, IdentifierableAwareInterface
+abstract class Entity implements EntityInterface, IdentifierableAwareInterface
 {
     use IdentifierAwareTrait;
 }

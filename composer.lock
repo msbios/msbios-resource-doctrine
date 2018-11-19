@@ -3553,16 +3553,16 @@
         },
         {
             "name": "msbios/resource",
-            "version": "v1.0.15",
+            "version": "v1.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-resource.git",
-                "reference": "fbf82dd3ad21508b0165229f2350c56bd4308e24"
+                "reference": "57c38bffd14a9d5a4103ddc1e6483d1e0583658a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-resource/zipball/fbf82dd3ad21508b0165229f2350c56bd4308e24",
-                "reference": "fbf82dd3ad21508b0165229f2350c56bd4308e24",
+                "url": "https://api.github.com/repos/msbios/msbios-resource/zipball/57c38bffd14a9d5a4103ddc1e6483d1e0583658a",
+                "reference": "57c38bffd14a9d5a4103ddc1e6483d1e0583658a",
                 "shasum": ""
             },
             "require": {
@@ -3597,7 +3597,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-10-24T14:01:01+00:00"
+            "time": "2018-11-18T19:53:21+00:00"
         },
         {
             "name": "msbios/test",

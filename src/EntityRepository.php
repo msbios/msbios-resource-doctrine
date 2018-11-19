@@ -54,10 +54,9 @@ class EntityRepository extends DefaultEntityRepository
             /** @var QueryBuilderPaginator|AdapterInterface $adapter */
             $adapter = $where($qb, $orderBy, $group, $having);
 
-            if (!($adapter instanceof AdapterInterface)) {
+            if (! ($adapter instanceof AdapterInterface)) {
                 throw new \Exception('Must be AdapterInterface');
             }
-
         } else {
             /** @var QueryBuilderPaginator|AdapterInterface $adapter */
             $adapter = new QueryBuilderPaginator($qb, $where, $orderBy, $group, $having);

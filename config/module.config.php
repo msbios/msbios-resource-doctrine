@@ -3,9 +3,10 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-
 namespace MSBios\Resource\Doctrine;
 
+use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+use MSBios\Factory\ModuleFactory;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -13,7 +14,7 @@ return [
         'driver' => [
             // defines an annotation driver with two paths, and names it `my_annotation_driver`
             Module::class => [
-                'class' => \Doctrine\ORM\Mapping\Driver\AnnotationDriver::class,
+                'class' => AnnotationDriver::class,
                 'cache' => 'array',
                 'paths' => [
                     __DIR__ . '/../src/Entity'
@@ -24,7 +25,8 @@ return [
             // Override `orm_default` only if you know what you're doing
             'orm_default' => [
                 'drivers' => [
-                    Entity::class => Module::class
+                    Entity::class =>
+                        Module::class
                 ]
             ],
         ],
@@ -57,7 +59,7 @@ return [
             Session\SaveHandler\DoctrineGateway::class =>
                 Factory\DoctrineGatewayFactory::class,
             Module::class =>
-                Factory\ModuleFactory::class
+                ModuleFactory::class
         ],
     ],
 

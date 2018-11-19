@@ -46,10 +46,12 @@ class Layout extends Entity implements
     }
 
     /**
-     * @param string $template
+     * @param $template
+     * @return $this
      */
     public function setTemplate($template)
     {
         $this->template = $template;
+        return $this;
     }
 }
