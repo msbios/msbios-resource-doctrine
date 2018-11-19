@@ -7,7 +7,6 @@ namespace MSBios\Resource\Doctrine\Listener;
 
 use MSBios\Resource\Doctrine\Module;
 use MSBios\Resource\Doctrine\Session\SaveHandler\DoctrineGateway;
-use Zend\Config\Config;
 use Zend\EventManager\EventInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\Session\Config\SessionConfig;
@@ -29,16 +28,15 @@ class SessionListener
         $serviceManager = $e->getApplication()
             ->getServiceManager();
 
-        /** @var Config $config */
-        $config = $serviceManager
-            ->get(Module::class)
-            ->get('session');
+        /** @var array $options */
+        $options = $serviceManager
+            ->get(Module::class)['session'];
 
-        if ($config->get('enabled', false)) {
+        if ($options['enabled']) {
 
             /** @var SessionConfig $sessionConfig */
             $sessionConfig = new SessionConfig;
-            $sessionConfig->setOptions($config->get('options'));
+            $sessionConfig->setOptions($options['options']);
 
             /** @var SessionManager $sessionManager */
             $sessionManager = new SessionManager;
