@@ -27,7 +27,7 @@ class Module implements
     AutoloaderProviderInterface
 {
     /** @const VERSION */
-    const VERSION = '1.0.27';
+    const VERSION = '1.0.28';
 
     /**
      * Returns configuration to merge with application configuration
@@ -61,7 +61,7 @@ class Module implements
         $platform->registerDoctrineTypeMapping('enum', 'string');
 
         (new LazyListenerAggregate(
-            $serviceManager->get(self::class)->get('listeners'),
+            $serviceManager->get(self::class)['listeners'],
             $serviceManager
         ))->attach($target->getEventManager());
     }
