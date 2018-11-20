@@ -21,7 +21,7 @@ use Zend\Paginator\Paginator;
 class EntityRepository extends DefaultEntityRepository
 {
     /** @const DEFAULT_ALIAS */
-    const DEFAULT_ALIAS = ObjectRepository::class;
+    const DEFAULT_ALIAS = 'o';
 
     /**
      * @param $id
@@ -73,7 +73,7 @@ class EntityRepository extends DefaultEntityRepository
     public function save(EntityInterface $object)
     {
         /** @var int $id */
-        $id = (int)$object->getId();
+        $id = (int) $object->getId();
 
         /** @var ObjectManager $em */
         $em = $this->getEntityManager();
