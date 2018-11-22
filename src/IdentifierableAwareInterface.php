@@ -17,7 +17,8 @@ interface IdentifierableAwareInterface
     public function getId();
 
     /**
-     * @param int $id
+     * @param $id
+     * @return mixed
      */
     public function setId($id);
 }

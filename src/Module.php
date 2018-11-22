@@ -27,12 +27,12 @@ class Module implements
     AutoloaderProviderInterface
 {
     /** @const VERSION */
-    const VERSION = '1.0.33';
+    const VERSION = '1.0.34';
 
     /**
-     * Returns configuration to merge with application configuration
+     * @inheritdoc
      *
-     * @return array|\Traversable
+     * @return array|mixed|\Traversable
      */
     public function getConfig()
     {
@@ -40,10 +40,11 @@ class Module implements
     }
 
     /**
-     * Listen to the bootstrap event
+     * @inheritdoc
      *
      * @param EventInterface $e
-     * @return array
+     * @return array|void
+     * @throws \Doctrine\DBAL\DBALException
      */
     public function onBootstrap(EventInterface $e)
     {
