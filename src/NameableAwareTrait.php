@@ -16,7 +16,7 @@ trait NameableAwareTrait
     /**
      * @var string
      *
-     * @ORM\Column(name="options", type="string", length=200)
+     * @ORM\Column(name="name", type="string", length=200)
      */
     private $name;
 
