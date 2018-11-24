@@ -19,7 +19,7 @@ trait IdentifierAwareTrait
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    protected $id;
+    private $id;
 
     /**
      * @return int
