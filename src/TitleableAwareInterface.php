@@ -6,10 +6,10 @@
 namespace MSBios\Resource\Doctrine;
 
 /**
- * Interface TitlebleAwareInterface
+ * Interface TitleableAwareInterface
  * @package MSBios\Resource\Doctrine
  */
-interface TitlebleAwareInterface
+interface TitleableAwareInterface
 {
     /**
      * @return string

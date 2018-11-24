@@ -9,8 +9,8 @@ use Doctrine\ORM\Mapping as ORM;
 use MSBios\Resource\Doctrine\Entity;
 use MSBios\Resource\Doctrine\RowStatusableAwareInterface;
 use MSBios\Resource\Doctrine\RowStatusableAwareTrait;
-use MSBios\Resource\Doctrine\TitlebleAwareInterface;
-use MSBios\Resource\Doctrine\TitlebleAwareTrait;
+use MSBios\Resource\Doctrine\TitleableAwareInterface;
+use MSBios\Resource\Doctrine\TitleableAwareTrait;
 
 /**
  * Class Theme
@@ -20,10 +20,10 @@ use MSBios\Resource\Doctrine\TitlebleAwareTrait;
  * @ORM\Table(name="sys_t_themes")
  */
 class Theme extends Entity implements
-    TitlebleAwareInterface,
+    TitleableAwareInterface,
     RowStatusableAwareInterface
 {
-    use TitlebleAwareTrait;
+    use TitleableAwareTrait;
     use RowStatusableAwareTrait;
 
     /**

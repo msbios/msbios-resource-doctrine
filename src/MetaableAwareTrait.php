@@ -8,10 +8,10 @@ namespace MSBios\Resource\Doctrine;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Trait NameableAwareTrait
+ * Trait MetaableAwareTrait
  * @package MSBios\Resource\Doctrine
  */
-trait NameableAwareTrait
+trait MetaableAwareTrait
 {
     /**
      * @var string
