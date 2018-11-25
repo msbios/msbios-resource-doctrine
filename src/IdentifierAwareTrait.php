@@ -6,6 +6,8 @@
 
 namespace MSBios\Resource\Doctrine;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Trait IdentifierAwareTrait
  * @package MSBios\Resource\Doctrine
