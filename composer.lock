@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f858724da13f624852f3ddec5c063f2",
+    "content-hash": "690911a5ca468b9afdf81d1ce9863df0",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -80,53 +80,6 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
-        },
-        {
-            "name": "dkorsak/doctrine-data-fixture-module",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dkorsak/doctrine-data-fixture-module.git",
-                "reference": "30adc3dec49d839eb6818a56fcd7496fb517e7bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dkorsak/doctrine-data-fixture-module/zipball/30adc3dec49d839eb6818a56fcd7496fb517e7bb",
-                "reference": "30adc3dec49d839eb6818a56fcd7496fb517e7bb",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/data-fixtures": "^1.1",
-                "doctrine/doctrine-orm-module": "^1.1",
-                "php": ">=5.5.9",
-                "zendframework/zend-eventmanager": "~3.0",
-                "zendframework/zend-modulemanager": "~2.0",
-                "zendframework/zend-servicemanager": "~3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "DoctrineDataFixtureModule": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Korsak",
-                    "email": "danielkorsak@gmail.com"
-                }
-            ],
-            "description": "Zend Framework 3 Module that provides Doctrine Data-Fixture functionality",
-            "keywords": [
-                "data-fixture",
-                "doctrine",
-                "module",
-                "zf3"
-            ],
-            "time": "2016-11-14T13:43:34+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -420,66 +373,6 @@
             "time": "2018-11-21T01:24:55+00:00"
         },
         {
-            "name": "doctrine/data-fixtures",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "3a1e2c3c600e615a2dffe56d4ca0875cc5233e0a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/3a1e2c3c600e615a2dffe56d4ca0875cc5233e0a",
-                "reference": "3a1e2c3c600e615a2dffe56d4ca0875cc5233e0a",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/common": "~2.2",
-                "php": "^7.1"
-            },
-            "conflict": {
-                "doctrine/phpcr-odm": "<1.3.0"
-            },
-            "require-dev": {
-                "doctrine/dbal": "^2.5.4",
-                "doctrine/orm": "^2.5.4",
-                "phpunit/phpunit": "^7.0"
-            },
-            "suggest": {
-                "alcaeus/mongo-php-adapter": "For using MongoDB ODM with PHP 7",
-                "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
-                "doctrine/orm": "For loading ORM fixtures",
-                "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\DataFixtures\\": "lib/Doctrine/Common/DataFixtures"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                }
-            ],
-            "description": "Data Fixtures for all Doctrine Object Managers",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "database"
-            ],
-            "time": "2018-03-20T09:06:36+00:00"
-        },
-        {
             "name": "doctrine/dbal",
             "version": "v2.8.0",
             "source": {
@@ -560,47 +453,49 @@
         },
         {
             "name": "doctrine/doctrine-module",
-            "version": "1.2.0",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineModule.git",
-                "reference": "9407d04d0b08e7071dab05c9d068cefda9dc5a6f"
+                "reference": "66addcc57bb30c5ba44542428537048f8b6b5b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/9407d04d0b08e7071dab05c9d068cefda9dc5a6f",
-                "reference": "9407d04d0b08e7071dab05c9d068cefda9dc5a6f",
+                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/66addcc57bb30c5ba44542428537048f8b6b5b71",
+                "reference": "66addcc57bb30c5ba44542428537048f8b6b5b71",
                 "shasum": ""
             },
             "require": {
-                "doctrine/cache": "^1.6",
-                "doctrine/common": "^2.6.1",
-                "php": "^5.6 || ^7.0",
-                "symfony/console": "^2.3 || ^3.0",
+                "doctrine/cache": "^1.7",
+                "doctrine/common": "^2.8",
+                "php": "^7.1",
+                "symfony/console": "^3.3 || ^4.0",
                 "zendframework/zend-authentication": "^2.5.3",
                 "zendframework/zend-cache": "^2.7.1",
-                "zendframework/zend-form": "^2.9",
-                "zendframework/zend-hydrator": "^1.1 || ^2.2.1",
-                "zendframework/zend-mvc": "^2.7.10 || ^3.0.1",
-                "zendframework/zend-paginator": "^2.7",
-                "zendframework/zend-servicemanager": "^2.7.6 || ^3.1",
-                "zendframework/zend-stdlib": "^2.7.7 || ^3.0.1",
-                "zendframework/zend-validator": "^2.8.1"
+                "zendframework/zend-form": "^2.11",
+                "zendframework/zend-hydrator": "^2.3",
+                "zendframework/zend-mvc": "^3.1",
+                "zendframework/zend-paginator": "^2.8",
+                "zendframework/zend-servicemanager": "^3.3",
+                "zendframework/zend-stdlib": "^3.1",
+                "zendframework/zend-validator": "^2.10"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8",
-                "squizlabs/php_codesniffer": "^2.6.2",
-                "zendframework/zend-i18n": "^2.7.3",
+                "phpunit/phpunit": "^6.5 || ^7.0",
+                "predis/predis": "^1.1",
+                "squizlabs/php_codesniffer": "^2.7",
+                "zendframework/zend-i18n": "^2.7",
                 "zendframework/zend-log": "^2.9",
-                "zendframework/zend-modulemanager": "^2.7.2",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-mvc-console": "^1.1.11",
                 "zendframework/zend-serializer": "^2.8",
-                "zendframework/zend-session": "^2.7.3",
-                "zendframework/zend-test": "^2.6.1 || ^3.0.1",
+                "zendframework/zend-session": "^2.8",
+                "zendframework/zend-test": "^3.1.1",
                 "zendframework/zend-version": "^2.5.1"
             },
             "suggest": {
                 "doctrine/data-fixtures": "Data Fixtures if you want to generate test data or bootstrap data for your deployments",
-                "zendframework/zend-mvc-console": "^1.1.10 if you are using ZF3"
+                "zendframework/zend-mvc-console": "^1.1.11 if you want to use the ZF3 console libraries"
             },
             "bin": [
                 "bin/doctrine-module"
@@ -609,6 +504,12 @@
             "extra": {
                 "zf": {
                     "module": "DoctrineModule"
+                },
+                "branch-alias": {
+                    "dev-1.2-dev": "1.2-dev",
+                    "dev-2.0-dev": "2.0-dev",
+                    "dev-master": "1.2-dev",
+                    "dev-develop": "2.0-dev"
                 }
             },
             "autoload": {
@@ -648,37 +549,37 @@
                 "module",
                 "zf"
             ],
-            "time": "2016-10-03T19:40:55+00:00"
+            "time": "2018-11-02T01:56:49+00:00"
         },
         {
             "name": "doctrine/doctrine-orm-module",
-            "version": "1.1.8",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineORMModule.git",
-                "reference": "d0ff7aaa1c4eabf4bab2a6ae73317c34330467c3"
+                "reference": "a205cc69e35633ced3723629dc54f7edea677841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineORMModule/zipball/d0ff7aaa1c4eabf4bab2a6ae73317c34330467c3",
-                "reference": "d0ff7aaa1c4eabf4bab2a6ae73317c34330467c3",
+                "url": "https://api.github.com/repos/doctrine/DoctrineORMModule/zipball/a205cc69e35633ced3723629dc54f7edea677841",
+                "reference": "a205cc69e35633ced3723629dc54f7edea677841",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^2.6.0",
-                "doctrine/doctrine-module": "^1.2",
+                "doctrine/doctrine-module": "^2.1.3",
                 "doctrine/orm": "^2.6.0",
                 "php": "^7.1",
                 "symfony/console": "^2.3 || ^3.0 || ^4.0",
                 "zendframework/zend-hydrator": "^1.1 || ^2.2.1",
-                "zendframework/zend-mvc": "^2.7.10 || ^3.0.1",
+                "zendframework/zend-mvc": "^2.7.13 || ^3.0.1",
                 "zendframework/zend-servicemanager": "^2.7.6 || ^3.1",
                 "zendframework/zend-stdlib": "^2.7.7 || ^3.0.1"
             },
             "require-dev": {
                 "doctrine/data-fixtures": "^1.2.1",
                 "doctrine/migrations": "^1.4.1",
-                "phpunit/phpunit": "^6.5",
+                "phpunit/phpunit": "^7.0.3",
                 "squizlabs/php_codesniffer": "^2.7",
                 "zendframework/zend-console": "^2.6",
                 "zendframework/zend-developer-tools": "^1.1",
@@ -736,7 +637,7 @@
                 "orm",
                 "zf"
             ],
-            "time": "2018-04-15T22:58:02+00:00"
+            "time": "2018-04-16T02:50:53+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -1309,20 +1210,20 @@
         },
         {
             "name": "msbios/doctrine",
-            "version": "v1.0.10",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-doctrine.git",
-                "reference": "717ac05ebb18fcd3b611077b31f7bcb4a775e544"
+                "reference": "3e267e5dcdc82fec059429674912c4f9f9c8341c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-doctrine/zipball/717ac05ebb18fcd3b611077b31f7bcb4a775e544",
-                "reference": "717ac05ebb18fcd3b611077b31f7bcb4a775e544",
+                "url": "https://api.github.com/repos/msbios/msbios-doctrine/zipball/3e267e5dcdc82fec059429674912c4f9f9c8341c",
+                "reference": "3e267e5dcdc82fec059429674912c4f9f9c8341c",
                 "shasum": ""
             },
             "require": {
-                "doctrine/doctrine-orm-module": "^1.1",
+                "doctrine/doctrine-orm-module": "^2.1",
                 "msbios/form": "^1.0",
                 "msbios/json": "^1.0",
                 "msbios/stdlib": "^1.0"
@@ -1358,7 +1259,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-12T12:13:46+00:00"
+            "time": "2018-11-26T19:34:28+00:00"
         },
         {
             "name": "msbios/form",
@@ -1750,53 +1651,6 @@
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
-            "name": "psr/log",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Log\\": "Psr/Log/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "time": "2018-11-20T15:27:04+00:00"
-        },
-        {
             "name": "psr/simple-cache",
             "version": "1.0.1",
             "source": {
@@ -1846,21 +1700,20 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.19",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb"
+                "reference": "c74f4d1988dfcd8760273e53551694da32b056d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb",
-                "reference": "8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb",
+                "url": "https://api.github.com/repos/symfony/console/zipball/c74f4d1988dfcd8760273e53551694da32b056d0",
+                "reference": "c74f4d1988dfcd8760273e53551694da32b056d0",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
-                "symfony/debug": "~2.8|~3.0|~4.0",
+                "php": "^7.1.3",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
@@ -1869,11 +1722,11 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~3.3|~4.0",
+                "symfony/config": "~3.4|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+                "symfony/event-dispatcher": "~3.4|~4.0",
                 "symfony/lock": "~3.4|~4.0",
-                "symfony/process": "~3.3|~4.0"
+                "symfony/process": "~3.4|~4.0"
             },
             "suggest": {
                 "psr/log-implementation": "For using the console logger",
@@ -1884,7 +1737,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1911,63 +1764,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-26T12:48:07+00:00"
-        },
-        {
-            "name": "symfony/debug",
-            "version": "v4.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/debug.git",
-                "reference": "f9eea0cff99d14f97d69b24b17164098ece3fd32"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/f9eea0cff99d14f97d69b24b17164098ece3fd32",
-                "reference": "f9eea0cff99d14f97d69b24b17164098ece3fd32",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "psr/log": "~1.0"
-            },
-            "conflict": {
-                "symfony/http-kernel": "<3.4"
-            },
-            "require-dev": {
-                "symfony/http-kernel": "~3.4|~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Debug\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Debug Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-11-11T19:51:29+00:00"
+            "time": "2018-11-26T14:00:40+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

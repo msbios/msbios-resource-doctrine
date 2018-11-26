@@ -16,7 +16,7 @@ trait RowStatusableAwareTrait
     /**
      * @var bool
      *
-     * @ORM\Column(name="rowstatus", type="boolean")
+     * @ORM\Column(name="rowstatus", type="boolean", columnDefinition="1")
      */
     private $rowStatus = true;
 
