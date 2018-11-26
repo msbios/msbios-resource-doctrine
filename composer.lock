@@ -1558,24 +1558,24 @@
         },
         {
             "name": "msbios/paginator-doctrine",
-            "version": "v1.0.1",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-paginator-doctrine.git",
-                "reference": "a897035eb33754e998557ac0c36e2420afaf641d"
+                "reference": "ed200992b3ba8fe3ca849940f62e4630801efb55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-paginator-doctrine/zipball/a897035eb33754e998557ac0c36e2420afaf641d",
-                "reference": "a897035eb33754e998557ac0c36e2420afaf641d",
+                "url": "https://api.github.com/repos/msbios/msbios-paginator-doctrine/zipball/ed200992b3ba8fe3ca849940f62e4630801efb55",
+                "reference": "ed200992b3ba8fe3ca849940f62e4630801efb55",
                 "shasum": ""
             },
             "require": {
-                "msbios/doctrine": "^1.0",
                 "zendframework/zend-paginator": "^2.8"
             },
             "require-dev": {
                 "msbios/debug": "^1.0",
+                "msbios/doctrine": "^1.0",
                 "msbios/test": "^1.0"
             },
             "type": "library",
@@ -1604,7 +1604,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-10-25T14:10:59+00:00"
+            "time": "2018-11-26T20:33:36+00:00"
         },
         {
             "name": "msbios/stdlib",
