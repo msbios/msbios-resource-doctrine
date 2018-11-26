@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8d908a13de662d01a0d066347b7c28f",
+    "content-hash": "3f858724da13f624852f3ddec5c063f2",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1413,23 +1413,23 @@
         },
         {
             "name": "msbios/form-doctrine",
-            "version": "v1.0.4",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-form-doctrine.git",
-                "reference": "8c2fbf1d1f2a37d8a20e1fe6c926a15bc734fa1d"
+                "reference": "e87dca88568c174e88aedf4d5922885032aa1a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-form-doctrine/zipball/8c2fbf1d1f2a37d8a20e1fe6c926a15bc734fa1d",
-                "reference": "8c2fbf1d1f2a37d8a20e1fe6c926a15bc734fa1d",
+                "url": "https://api.github.com/repos/msbios/msbios-form-doctrine/zipball/e87dca88568c174e88aedf4d5922885032aa1a06",
+                "reference": "e87dca88568c174e88aedf4d5922885032aa1a06",
                 "shasum": ""
             },
             "require": {
-                "msbios/doctrine": "^1.0",
                 "msbios/form": "^1.0"
             },
             "require-dev": {
+                "msbios/doctrine": "^1.0",
                 "msbios/test": "^1.0"
             },
             "type": "library",
@@ -1445,7 +1445,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -1458,7 +1458,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-11-17T14:30:58+00:00"
+            "time": "2018-11-26T19:48:51+00:00"
         },
         {
             "name": "msbios/json",
@@ -1846,16 +1846,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.18",
+            "version": "v3.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "1d228fb4602047d7b26a0554e0d3efd567da5803"
+                "reference": "8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/1d228fb4602047d7b26a0554e0d3efd567da5803",
-                "reference": "1d228fb4602047d7b26a0554e0d3efd567da5803",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb",
+                "reference": "8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb",
                 "shasum": ""
             },
             "require": {
@@ -1911,20 +1911,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-30T16:50:50+00:00"
+            "time": "2018-11-26T12:48:07+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "19090917b848a799cbae4800abf740fe4eb71c1d"
+                "reference": "f9eea0cff99d14f97d69b24b17164098ece3fd32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/19090917b848a799cbae4800abf740fe4eb71c1d",
-                "reference": "19090917b848a799cbae4800abf740fe4eb71c1d",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/f9eea0cff99d14f97d69b24b17164098ece3fd32",
+                "reference": "f9eea0cff99d14f97d69b24b17164098ece3fd32",
                 "shasum": ""
             },
             "require": {
@@ -1967,7 +1967,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-31T09:09:42+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -4676,28 +4676,28 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "3.1.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5"
+                "reference": "febd209a219cea7b56ad799b30ebbea34b71eb8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/febd209a219cea7b56ad799b30ebbea34b71eb8f",
+                "reference": "febd209a219cea7b56ad799b30ebbea34b71eb8f",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.1"
+                "phpunit/phpunit": "^7.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -4722,7 +4722,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2017-07-01T08:51:00+00:00"
+            "time": "2018-11-25T09:31:21+00:00"
         },
         {
             "name": "sebastian/exporter",
@@ -5125,16 +5125,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "991fec8bbe77367fc8b48ecbaa8a4bd6e905a238"
+                "reference": "7e415fa42def2c89be6cfbd8286c616e86664b81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/991fec8bbe77367fc8b48ecbaa8a4bd6e905a238",
-                "reference": "991fec8bbe77367fc8b48ecbaa8a4bd6e905a238",
+                "url": "https://api.github.com/repos/symfony/config/zipball/7e415fa42def2c89be6cfbd8286c616e86664b81",
+                "reference": "7e415fa42def2c89be6cfbd8286c616e86664b81",
                 "shasum": ""
             },
             "require": {
@@ -5184,20 +5184,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-31T09:09:42+00:00"
+            "time": "2018-11-26T10:26:29+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "e72ee2c23d952e4c368ee98610fa22b79b89b483"
+                "reference": "9508a26af7e2546babf67a1494683ffabcd5a0a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/e72ee2c23d952e4c368ee98610fa22b79b89b483",
-                "reference": "e72ee2c23d952e4c368ee98610fa22b79b89b483",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/9508a26af7e2546babf67a1494683ffabcd5a0a3",
+                "reference": "9508a26af7e2546babf67a1494683ffabcd5a0a3",
                 "shasum": ""
             },
             "require": {
@@ -5255,20 +5255,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-31T10:54:16+00:00"
+            "time": "2018-11-20T16:14:00+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "fd7bd6535beb1f0a0a9e3ee960666d0598546981"
+                "reference": "71cc7693940bdad4dac4b038acd46b4f1ae7d2ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/fd7bd6535beb1f0a0a9e3ee960666d0598546981",
-                "reference": "fd7bd6535beb1f0a0a9e3ee960666d0598546981",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/71cc7693940bdad4dac4b038acd46b4f1ae7d2ca",
+                "reference": "71cc7693940bdad4dac4b038acd46b4f1ae7d2ca",
                 "shasum": ""
             },
             "require": {
@@ -5305,7 +5305,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-30T13:18:25+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
