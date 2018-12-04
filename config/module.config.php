@@ -6,6 +6,7 @@
 namespace MSBios\Resource\Doctrine;
 
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+use MSBios\Doctrine\Factory\ObjectableFactory;
 use MSBios\Factory\ModuleFactory;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
@@ -57,7 +58,7 @@ return [
             Listener\SessionListener::class =>
                 InvokableFactory::class,
             Session\SaveHandler\DoctrineGateway::class =>
-                Factory\DoctrineGatewayFactory::class,
+                ObjectableFactory::class,
             Module::class =>
                 ModuleFactory::class
         ],
