@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c63b5b0-3508-44d4-949a-0913342db74a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/msbios-resource-doctrine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/msbios-resource-doctrine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Module.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/PageType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Route.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Setting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Theme.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factory/DoctrineCacheFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PageTypeForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listener/SessionListener.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/LayoutRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ModuleRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PageTypeRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PaginatorRepositoryTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/RouteRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SessionRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SettingRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ThemeRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Session/SaveHandler/DoctrineGateway.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.Layout.dcm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.Module.dcm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.PageType.dcm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.Router.dcm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.Session.dcm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.Theme.dcm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Yml/MSBios.Resource.Entity.User.dcm.yml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Module.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="270">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="e#126#168#0#PHP" expanded="true" />
               </folding>
@@ -60,22 +31,8 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContentableAwareInterface.php">
+        <entry file="file://$PROJECT_DIR$/src/TitleableAwareTrait.php">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ContentableAwareTrait.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -90,11 +47,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="-374">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="e#125#171#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/autoload/doctrine.global.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -321,6 +292,12 @@
             <path>
               <item name="msbios-resource-doctrine" type="b2602c69:ProjectViewProjectNode" />
               <item name="msbios-resource-doctrine" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="autoload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msbios-resource-doctrine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msbios-resource-doctrine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -446,12 +423,12 @@
       <updated>1542716695362</updated>
       <workItem from="1542716699518" duration="2041000" />
       <workItem from="1542961195939" duration="439000" />
-      <workItem from="1558620709932" duration="780000" />
+      <workItem from="1558620709932" duration="856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7827000" />
+    <option name="totallyTimeSpent" value="7903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3286" y="-2" width="1920" height="1082" extended-state="6" />
@@ -482,20 +459,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/msbios/resource/src/Form/PageTypeForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TimestampableAwareInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/msbios/form-doctrine/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -514,13 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -775,16 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#125#171#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EntityRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -797,10 +743,33 @@
     <entry file="file://$PROJECT_DIR$/src/MetableAwareInterface.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TitleableAwareTrait.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#125#171#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/doctrine.global.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Module.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="270">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="e#126#168#0#PHP" expanded="true" />
           </folding>
