@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c63b5b0-3508-44d4-949a-0913342db74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Operator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/msbios-resource-doctrine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/msbios-resource-doctrine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EntityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +20,9 @@
     <session id="-1383104425">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="3" />
@@ -27,7 +30,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,7 +39,7 @@
           <entry key="json" value="5" />
           <entry key="lock" value="4" />
           <entry key="md" value="1" />
-          <entry key="php" value="59" />
+          <entry key="php" value="63" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -45,7 +48,7 @@
           <entry key="Bash" value="1" />
           <entry key="JSON" value="9" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="59" />
+          <entry key="PHP" value="63" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -53,14 +56,14 @@
         <counts>
           <entry key="json" value="15" />
           <entry key="md" value="2" />
-          <entry key="php" value="1632" />
+          <entry key="php" value="1831" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="15" />
           <entry key="Markdown" value="2" />
-          <entry key="PHP" value="1632" />
+          <entry key="PHP" value="1831" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -75,35 +78,55 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="138" column="72" selection-start-line="138" selection-start-column="72" selection-end-line="138" selection-end-column="72" />
+            <state relative-caret-position="635">
+              <caret line="430" column="5" selection-start-line="430" selection-start-column="5" selection-end-line="430" selection-end-column="5" />
               <folding>
                 <element signature="e#125#171#0#PHP" expanded="true" />
-                <element signature="e#3217#3353#0#PHP" />
-                <element signature="e#3342#4174#0#PHP" />
-                <element signature="e#4274#4642#0#PHP" />
+                <element signature="e#1314#2124#0#PHP" />
+                <element signature="e#2241#2862#0#PHP" />
+                <element signature="e#2922#3112#0#PHP" />
+                <element signature="e#4133#5003#0#PHP" />
+                <element signature="e#4891#5465#0#PHP" />
+                <element signature="e#5588#8347#0#PHP" />
+                <element signature="e#8235#8348#0#PHP" />
+                <element signature="e#8471#8782#0#PHP" />
+                <element signature="e#8670#8783#0#PHP" />
+                <element signature="e#8906#9219#0#PHP" />
+                <element signature="e#9107#9220#0#PHP" />
+                <element signature="e#9343#9654#0#PHP" />
+                <element signature="e#9542#9655#0#PHP" />
+                <element signature="e#9778#10039#0#PHP" />
+                <element signature="e#9927#10040#0#PHP" />
+                <element signature="e#10163#10474#0#PHP" />
+                <element signature="e#10362#10475#0#PHP" />
+                <element signature="e#10598#10859#0#PHP" />
+                <element signature="e#10747#10866#0#PHP" />
+                <element signature="e#10989#11262#0#PHP" />
+                <element signature="e#11150#11269#0#PHP" />
+                <element signature="e#11392#11670#0#PHP" />
+                <element signature="e#11558#11671#0#PHP" />
+                <element signature="e#11794#12000#0#PHP" />
+                <element signature="e#11888#11948#0#PHP" />
+                <element signature="e#12071#12216#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/msbios/paginator-doctrine/src/Adapter/QueryBuilderPaginator.php">
+        <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-stdlib/src/ArrayUtils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-              <folding>
-                <element signature="e#134#164#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="250">
+              <caret line="238" column="13" lean-forward="true" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Pagination/Paginator.php">
+        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
+            <state relative-caret-position="90">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -111,26 +134,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-orm-module/src/DoctrineORMModule/Paginator/Adapter/DoctrinePaginator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="-43">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding>
+                <element signature="e#55#99#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php">
+        <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-paginator/src/Adapter/AdapterInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="3092" column="20" selection-start-line="3092" selection-start-column="20" selection-end-line="3092" selection-end-column="20" />
+            <state relative-caret-position="150">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php">
+        <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Pagination/Paginator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="278" column="50" selection-start-line="278" selection-start-column="37" selection-end-line="278" selection-end-column="50" />
+            <state relative-caret-position="-263">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -138,7 +164,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="12600">
               <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
             </state>
           </provider>
@@ -147,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="443" column="39" lean-forward="true" selection-start-line="443" selection-start-column="39" selection-end-line="443" selection-end-column="39" />
+            <state relative-caret-position="6405">
+              <caret line="443" column="39" selection-start-line="443" selection-start-column="39" selection-end-line="443" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -156,7 +182,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="14550">
               <caret line="990" selection-start-line="990" selection-end-line="995" selection-end-column="14" />
             </state>
           </provider>
@@ -165,8 +191,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="300">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -184,10 +210,16 @@
       <find>all</find>
       <find>self::createPlaceholder</find>
       <find>eq(</find>
+      <find>iden</find>
+      <find>Travers</find>
+      <find>applyPagination</find>
     </findStrings>
     <replaceStrings>
       <replace>$this-&gt;createPlaceholder</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/vendor</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -359,7 +391,13 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-config" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-view" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-dom" />
-      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/php-slang/php-slang" />
+      <path value="$PROJECT_DIR$/vendor/patchwork/utf8" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/peekmo/jsonpath" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
@@ -419,6 +457,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
   </component>
   <component name="RecentsManager">
@@ -474,18 +513,18 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4041488" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35198134" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36385542" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -502,20 +541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/OptionableAwareTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IdentifierableAwareInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -640,13 +665,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory/DoctrinableFactory.php" />
     <entry file="file://$PROJECT_DIR$/src/Factory/DoctrineGatewayFactory.php" />
-    <entry file="file://$PROJECT_DIR$/src/Factory/DoctrineCacheFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/DoctrineCacheFactory.php" />
     <entry file="file://$PROJECT_DIR$/config/module.resource-doctrine.local.php.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -675,9 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-          <folding>
-            <element signature="e#125#174#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,13 +711,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Layout.php" />
     <entry file="file://$PROJECT_DIR$/src/Module.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -712,16 +722,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Session/SaveHandler/DoctrineGateway.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#146#194#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Session/SaveHandler/DoctrineGateway.php" />
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-module/src/DoctrineModule/Cache/ZendStorageCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -733,13 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="84" column="16" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="246" column="23" selection-start-line="246" selection-start-column="23" selection-end-line="246" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -788,84 +782,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="443" column="39" lean-forward="true" selection-start-line="443" selection-start-column="39" selection-end-line="443" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="278" column="50" selection-start-line="278" selection-start-column="37" selection-end-line="278" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="3092" column="20" selection-start-line="3092" selection-start-column="20" selection-end-line="3092" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="990" selection-start-line="990" selection-end-line="995" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Pagination/Paginator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/msbios/paginator-doctrine/src/Adapter/QueryBuilderPaginator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state relative-caret-position="150">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
           <folding>
             <element signature="e#134#164#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46020">
+          <caret line="3092" column="20" selection-start-line="3092" selection-start-column="20" selection-end-line="3092" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="278" column="50" selection-start-line="278" selection-start-column="37" selection-end-line="278" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12600">
+          <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Query/Expr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6405">
+          <caret line="443" column="39" selection-start-line="443" selection-start-column="39" selection-end-line="443" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14550">
+          <caret line="990" selection-start-line="990" selection-end-line="995" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-paginator/src/Adapter/AdapterInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Pagination/Paginator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-stdlib/src/ArrayUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="238" column="13" lean-forward="true" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-orm-module/src/DoctrineORMModule/Paginator/Adapter/DoctrinePaginator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="-43">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#55#99#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="138" column="72" selection-start-line="138" selection-start-column="72" selection-end-line="138" selection-end-column="72" />
+        <state relative-caret-position="635">
+          <caret line="430" column="5" selection-start-line="430" selection-start-column="5" selection-end-line="430" selection-end-column="5" />
           <folding>
             <element signature="e#125#171#0#PHP" expanded="true" />
-            <element signature="e#3217#3353#0#PHP" />
-            <element signature="e#3342#4174#0#PHP" />
-            <element signature="e#4274#4642#0#PHP" />
+            <element signature="e#1314#2124#0#PHP" />
+            <element signature="e#2241#2862#0#PHP" />
+            <element signature="e#2922#3112#0#PHP" />
+            <element signature="e#4133#5003#0#PHP" />
+            <element signature="e#4891#5465#0#PHP" />
+            <element signature="e#5588#8347#0#PHP" />
+            <element signature="e#8235#8348#0#PHP" />
+            <element signature="e#8471#8782#0#PHP" />
+            <element signature="e#8670#8783#0#PHP" />
+            <element signature="e#8906#9219#0#PHP" />
+            <element signature="e#9107#9220#0#PHP" />
+            <element signature="e#9343#9654#0#PHP" />
+            <element signature="e#9542#9655#0#PHP" />
+            <element signature="e#9778#10039#0#PHP" />
+            <element signature="e#9927#10040#0#PHP" />
+            <element signature="e#10163#10474#0#PHP" />
+            <element signature="e#10362#10475#0#PHP" />
+            <element signature="e#10598#10859#0#PHP" />
+            <element signature="e#10747#10866#0#PHP" />
+            <element signature="e#10989#11262#0#PHP" />
+            <element signature="e#11150#11269#0#PHP" />
+            <element signature="e#11392#11670#0#PHP" />
+            <element signature="e#11558#11671#0#PHP" />
+            <element signature="e#11794#12000#0#PHP" />
+            <element signature="e#11888#11948#0#PHP" />
+            <element signature="e#12071#12216#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

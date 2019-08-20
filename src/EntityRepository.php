@@ -10,10 +10,12 @@ use Doctrine\ORM\EntityNotFoundException;
 use Doctrine\ORM\EntityRepository as DefaultEntityRepository;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\QueryBuilder;
+use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
 use MSBios\Paginator\Doctrine\Adapter\QueryBuilderPaginator;
 use Zend\Paginator\Adapter\AdapterInterface;
 use Zend\Paginator\Paginator;
+use Zend\Stdlib\ArrayUtils;
 
 /**
  * Class EntityRepository
@@ -120,33 +122,43 @@ class EntityRepository extends DefaultEntityRepository
     }
 
     /**
-     * @param \Traversable $filters
-     * @param \Traversable $orders
-     * @return array
+     * @param array $filters
+     * @param array $orders
+     * @return Paginator
      */
-    public function fetchBy(\Traversable $filters = [], \Traversable $orders = []): array
+    public function fetchBy(array $filters = [], array $orders = []): Paginator
     {
-
+        /** @var string $alias */
         $alias = $this->getAlias();
+
+        /** @var QueryBuilder $qb */
         $qb = $this->createQueryBuilder($alias);
 
         if ($filters) {
             $this->applyFilters($filters, $qb, $alias, $this->getClassName());
         }
 
-        $this->applyOrder($orders ?: ['id' => 'DESC'], $qb, $alias, $this->getClassName());
+        $this->applyOrders($orders ?: ['id' => 'DESC'], $qb, $alias, $this->getClassName());
 
-        return $this->applyPagination( new Paginator(new DoctrineAdapter());, $qb);
+        return new Paginator(
+            new DoctrineAdapter(
+                new ORMPaginator($qb, false)
+            )
+        );
     }
 
     /**
-     * @param \Traversable $order
+     * @param array $orders
      * @param QueryBuilder $qb
      * @param string $alias
      * @param string $className
      */
-    protected function applyOrder(\Traversable $order, QueryBuilder $qb, string $alias, string $className): void
+    protected function applyOrders(array $orders, QueryBuilder $qb, string $alias, string $className): void
     {
+        if ($orders instanceof \Traversable) {
+            $orders = ArrayUtils::iteratorToArray($orders);
+        }
+
         $metadata = $this
             ->getEntityManager()
             ->getClassMetadata($className);
@@ -155,13 +167,13 @@ class EntityRepository extends DefaultEntityRepository
 
         $relationColumns = $metadata->getAssociationMappings();
 
-        foreach ($order as $field => $value) {
+        foreach ($orders as $field => $value) {
 
             $column = $alias . '.' . $field;
 
             if (isset($relationColumns[$field]) && !\in_array($field, $qb->getAllAliases(), true)) {
                 $qb->leftJoin($column, $field);
-                $this->applyOrder($value, $qb, $field, $relationColumns[$field]['targetEntity']);
+                $this->applyOrders($value, $qb, $field, $relationColumns[$field]['targetEntity']);
                 continue;
             }
 
@@ -190,13 +202,17 @@ class EntityRepository extends DefaultEntityRepository
      *     ])
      * </code>
      *
-     * @param \Traversable $filters
+     * @param array $filters
      * @param QueryBuilder $qb
      * @param string $alias
      * @param string $className
      */
-    protected function applyFilters(\Traversable $filters, QueryBuilder $qb, string $alias, string $className): void
+    protected function applyFilters(array $filters, QueryBuilder $qb, string $alias, string $className): void
     {
+        if ($filters instanceof \Traversable) {
+            $filters = ArrayUtils::iteratorToArray($filters, false);
+        }
+
          /** @var ClassMetadata $metadata */
          $metadata = $this->getEntityManager()->getClassMetadata($className);
 
@@ -413,5 +429,4 @@ class EntityRepository extends DefaultEntityRepository
     {
         return (str_replace('.', '_', $name) . ++self::$placeholderCounter);
     }
-
 }
