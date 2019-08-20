@@ -19,7 +19,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 class Module extends \MSBios\Module implements BootstrapListenerInterface
 {
     /** @const VERSION */
-    const VERSION = '1.0.47';
+    const VERSION = '1.0.48';
 
     /**
      * @inheritdoc

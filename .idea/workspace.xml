@@ -39,7 +39,7 @@
           <entry key="json" value="5" />
           <entry key="lock" value="4" />
           <entry key="md" value="1" />
-          <entry key="php" value="63" />
+          <entry key="php" value="64" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -48,7 +48,7 @@
           <entry key="Bash" value="1" />
           <entry key="JSON" value="9" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="63" />
+          <entry key="PHP" value="64" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -56,14 +56,14 @@
         <counts>
           <entry key="json" value="15" />
           <entry key="md" value="2" />
-          <entry key="php" value="1831" />
+          <entry key="php" value="1832" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="15" />
           <entry key="Markdown" value="2" />
-          <entry key="PHP" value="1831" />
+          <entry key="PHP" value="1832" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -75,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="430" column="5" selection-start-line="430" selection-start-column="5" selection-end-line="430" selection-end-column="5" />
+            <state relative-caret-position="449">
+              <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
               <folding>
                 <element signature="e#125#171#0#PHP" expanded="true" />
                 <element signature="e#1314#2124#0#PHP" />
@@ -108,6 +108,18 @@
                 <element signature="e#11794#12000#0#PHP" />
                 <element signature="e#11888#11948#0#PHP" />
                 <element signature="e#12071#12216#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Module.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding>
+                <element signature="e#126#168#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,15 +169,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-263">
               <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12600">
-              <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -278,9 +281,9 @@
         <option value="$PROJECT_DIR$/src/OrderableAwareTrait.php" />
         <option value="$PROJECT_DIR$/src/OrderKeyableAwareTrait.php" />
         <option value="$PROJECT_DIR$/src/OrderKeyableAwareInterface.php" />
-        <option value="$PROJECT_DIR$/src/Module.php" />
         <option value="$PROJECT_DIR$/src/Operator.php" />
         <option value="$PROJECT_DIR$/src/EntityRepository.php" />
+        <option value="$PROJECT_DIR$/src/Module.php" />
       </list>
     </option>
   </component>
@@ -421,24 +424,6 @@
               <item name="msbios-resource-doctrine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="msbios-resource-doctrine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msbios-resource-doctrine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="msbios-resource-doctrine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msbios-resource-doctrine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="msbios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="msbios-resource-doctrine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msbios-resource-doctrine" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="msbios" type="462c0819:PsiDirectoryNode" />
-              <item name="stdlib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -513,7 +498,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -524,7 +509,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36385542" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36385542" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -712,16 +697,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Layout.php" />
-    <entry file="file://$PROJECT_DIR$/src/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="e#126#168#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Session/SaveHandler/DoctrineGateway.php" />
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-module/src/DoctrineModule/Cache/ZendStorageCache.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -874,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="430" column="5" selection-start-line="430" selection-start-column="5" selection-end-line="430" selection-end-column="5" />
+        <state relative-caret-position="449">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
           <folding>
             <element signature="e#125#171#0#PHP" expanded="true" />
             <element signature="e#1314#2124#0#PHP" />
@@ -904,6 +879,16 @@
             <element signature="e#11794#12000#0#PHP" />
             <element signature="e#11888#11948#0#PHP" />
             <element signature="e#12071#12216#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#126#168#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
